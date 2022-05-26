@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreen2"
+    android:background="@color/Background"
+    android:id="@+id/splash_screen_2">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_splash_2"
+        />
+
+
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/PoppinsSemiBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        android:text="Selamat Datang \nDi Aplikasi Pengenalan Diri \nMuhammad Fauzan Fadhlulbarr"
+        android:textAlignment="center"
+        android:textColor="@color/PrimaryText"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/buttonStarted"
+        android:layout_width="283dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="343dp"
+        android:background="@drawable/shape_rectangle_primary"
+        android:onClick="Walktrought"
+        android:text="Get Started"
+        android:textAllCaps="false"
+        android:textSize="18dp" />
+</RelativeLayout>

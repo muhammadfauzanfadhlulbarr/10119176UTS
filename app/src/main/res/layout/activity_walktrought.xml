@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Walktrought1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Background"
+    android:gravity="center"
+    tools:context=".Walktrought1">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_splash" />
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/slideViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="494dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="false">
+
+    </androidx.viewpager.widget.ViewPager>
+
+    <LinearLayout
+        android:id="@+id/dotsLayout"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/slideViewPager"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_below="@+id/dotsLayout"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/Backbtn"
+            android:layout_width="142dp"
+            android:layout_height="40dp"
+            android:background="@drawable/shape_rectangle_primary"
+            android:text="Back"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/Nextbtn"
+            android:layout_width="142dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/shape_rectangle_primary"
+            android:text="Next" />
+    </LinearLayout>
+
+</RelativeLayout>
